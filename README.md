@@ -60,7 +60,7 @@ El flujo de trabajo estándar aplicado en este taller incluye los siguientes pas
 5.  Conexión al repositorio remoto (`git remote add origin ...`).
 6.  Sincronización y subida de los cambios al servidor remoto (`git push`).
 
----
+---S
 
 ## 🛑 Sección: "Problemas encontrados hoy"
 
@@ -71,3 +71,19 @@ El flujo de trabajo estándar aplicado en este taller incluye los siguientes pas
 ## 🎉 Sección: "Conclusión del día"
 
 Hoy completé la configuración inicial de Git y comprendí el ciclo de vida de un cambio: desde la modificación de un archivo en el Directorio de Trabajo, su paso al Área de Preparación (`git add`), hasta su guardado final como un *commit*. También logre enlazar el repositorio local con un repositorio remoto en GitHub para colaborar y respaldar el trabajo.
+
+## 📝 Reflexión Final del Taller de Git
+
+Aquí están mis conclusiones del ejercicio completo:
+
+### 1. Problemas Encontrados
+El principal desafío técnico fue **forzar el conflicto en el Módulo 6**. Intente modificar el mismo archivo de forma diferente, pero Git resolvió automáticamente la fusión (Fast-forward) porque los cambios no se superpusieron en la misma línea, lo que impidió la práctica manual de resolución de conflictos. Otro problema menor fue recordar subir el propio archivo **`.gitignore`** al repositorio para que sus reglas se aplicaran correctamente.
+
+### 2. ¿Qué Aprendí Hoy?
+Aprendí la **diferencia crítica entre el flujo de trabajo local (`git checkout`, `git add`, `git commit`) y el flujo de trabajo remoto (Pull Requests en GitHub)**. Comprendí que las ramas de desarrollo son fundamentales para trabajar en equipo, ya que aíslan el trabajo y el `git push` sube todo el contexto, no solo los archivos.
+
+### 3. ¿Qué fue lo más difícil?
+Lo más difícil fue **entender cómo Git maneja los archivos ignorados**. Al principio, los archivos como `.env` seguían apareciendo en el `git status` hasta que entendí que mi trabajo es asegurarme de que el **`.gitignore`** esté en el *staging area* y *commit*eado antes de crear los archivos ignorados.
+
+### 4. Conclusión del Taller
+Este taller proporcionó un flujo de trabajo de desarrollo completo y realista. Demostré la capacidad de: configurar Git, manejar múltiples ramas (`feature/login`, `feature/footer`, etc.), crear solicitudes de fusión (`Pull Requests`) en GitHub, y aplicar prácticas de limpieza de código esenciales con **`.gitignore`**. El proyecto está ahora finalizado y listo para una nueva etapa de desarrollo.
