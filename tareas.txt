@@ -1,0 +1,14 @@
+# Tareas del Proyecto Final
+
+Pendientes:
+* Configurar rutas de navegación
+* Integrar base de datos
+* Revisar diseño de la interfaz
+
+Realizadas:
+* Creación de ramas
+* Configuración de .gitignore
+
+Bloqueadas:
+* Integración de pagos (Requiere clave API)
+* Testing de usuario (Falta código base)
